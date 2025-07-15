@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Gochops Website Design</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+<nav>
+    <a href="index.html"><img src="images/IMG_0119.png" alt="Gochops Logo" class="logo"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="">TESTIMONIALS</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+<div class="text-box">
+    <h1>Get Chops On The Go</h1>
+    <p>Getting great food shouldn't be hard.<br>Just order Gochops — fast delivery, fresh ingredients, full enjoyment</p>
+    <a href="" class="hero-btn">Order NOW!</a>
+</div>
+</section>
+
+<!-------Menu------>
+
+<section class="menu">
+    <h1>Chops We Serve</h1>
+    <p>Choose a pack that fits your vibe and appetite</p>
+
+    <div class="row">
+        <div. class="menu-col">
+            <h3>Little Bite</h3>
+            <p>This pack contains 3 puff puff, 1 samosa, 1 springroll, 1 fried peppered beef</p>
+        </div.>
+        <div. class="menu-col">
+            <h3>Bigger Bite</h3>
+            <p>This pack contains 5 puff puff, 2 samosa, 2 springroll, 2 fried peppered beef</p>
+        </div.>
+        <div. class="menu-col">
+            <h3>Oga Chops</h3>
+            <p>This pack contains 10 puff puff, 2 samosa, 2 springroll, 5 fried peppered beef</p>
+        </div.>
+    </div>
+</section>
+
+<!--------Gallery--------->
+
+<section class="gallery">
+    <h1>Gochops Gallery</h1>
+    <p>A taste of what we serve — from single bites to party trays.</p>
+
+    <div class="row">
+        <div class="gallery-col">
+            <img src="Images/gallery6.jpeg">
+            <div class="layer">
+                <h3>BULK ORDER</h3>
+            </div>
+        </div>
+        <div class="gallery-col">
+            <img src="Images/gallery3.jpeg">
+            <div class="layer">
+                <h3>LITTLE BITE</h3>
+            </div>
+        </div>
+        <div class="gallery-col">
+            <img src="Images/gallery7.jpeg">
+            <div class="layer">
+                <h3>OGA CHOPS</h3>
+            </div>
+        </div>
+        <div class="gallery-col">
+            <img src="Images/IMG_0128.png">
+            <div class="layer">
+                <h3>THE BOSS</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!------------ TESTIMONIALS ------->
+
+<section class="testimonials">
+    <h1>Don't Just Take Our Word for it</h1>
+    <p>Here's what our happy customers have to say after getting Gochops!</p>
+    
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="images/IMG_0141.jpeg" alt="testimonial1">
+            <div>
+            <p>"Thank you so much for the chops, they were amazing, some people even asked for your number."</p>
+            <h3>- Nissi, Port Harcourt</h3>
+            <i class="fa fa-commenting-o"></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="images/IMG_0142.jpeg" alt="testimonial2">
+            <div>
+            <p>"Your smallchops, chef's kiss"</p>
+            <h3>- Kesco, Port Harcourt</h3>
+            <i class="fa fa-commenting-o"></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="images/IMG_0143.jpeg" alt="testimonial3">
+            <div>
+            <p>"I've gotten mine and it taste sooooooooo goooddddddddd"</p>
+            <h3>- Mrs. Noami, Port Harcourt</h3>
+            <i class="fa fa-commenting-o"></i>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+     
+
+<!------------ Contact ------->
+
+<section class="contact">
+    <h1>Order. Ask. Say Hi.</h1>
+    <p>We're just a call or DM away! Place an order, ask a question, or book us for your next event.</p>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<!------------ Footer ------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Gochops is your go-to spot for delicious Nigerian small chops — fresh, fast, and full of flavor.<br> Whether it's a weekday craving or a weekend celebration, we bring the chops straight to you. <br>Get Chops on the Go!</p>
+     <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+     </div>
+     <p>Made with <i class="fa fa-heart-o"></i> by Alali Tobin</p>
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+    var navLinks= document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+
+
+</body>
+</html>
